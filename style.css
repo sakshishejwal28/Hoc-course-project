@@ -1,116 +1,279 @@
- *{
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
  }
- 
- 
- body{
+
+
+ body {
     height: 100%;
     width: 100%;
 
  }
- body{
+
+ body {
     background-color: #111;
     color: white;
 
  }
-  
+
+ 
  .navbar-nav {
-    gap: 4%;
-    margin-left: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-      
-position: fixed;
- 
-
-}
-.navbar-nav :hover{
-    
-border: 1px solid black;
-}
-.text-1 :hover{
-   color: blue;
-}
- 
-.navbar-nav img{
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-   gap: 3%;
-   align-items: center;
-  
-}
-
-.navbar-nav-1 {
-    gap: 4%;
     margin-left: 60%;
-     
-    display:none;
+    gap: 6%;
     align-items: center;
-    justify-content: right;
-      
-position: fixed;
-}
-.navbar-nav-1 ul{
-list-style: none;
-display: flex;
-align-items: center;
- 
- 
-}
-.navbar-nav-1 ul{ 
-    padding: 5px;
-   
-   margin: 2px;
-   font-size: 20px;
-   gap: 10px;
 
-}
+ }
 
-.navbar-nav-1 img{
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-   gap: 3%;
-   align-items: center;
+ .nav-container {
+    padding-left: 15%;
+    padding-right: 15%;
+    /* margin: 10px 60px; */
+    border: 2px solid rgb(1, 12, 17);
+    background: #040c0f;
+     background: linear-gradient(135deg, #04171f, #607f91);
+     
+ }
   
-}
+ .navbar-nav img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    gap: 3%;
+    align-items: center;
 
-  
-
-.nav-container {
-   font-size: 20px;
-    position: fixed;
-    padding-left: 7%;
-    padding-right: 7%
-   
-}
-
-@media (max-width:600px ) {
-.nav-container{
-padding: 4px;
-margin-left: 5%;
-font-size: 10px;
-}
-.navbar-nav img{
-   width: 20px;
-   height: 20px;
-}
-.navbar-nav{
-   margin-left:20% ;
-
+ }
+ .navbar-nav-1 ul{
    display: none;
+ }
+
+
+ @media (max-width:600px) {
+    .nav-container {
+       padding: 2px;
+       margin-left: 2%;
+       margin-right: 2%;
+       font-size: 10px;
+    }
+    .navbar-nav {
+       margin-left: 5%;
+       padding-left: 2%;
+
+       display: none;
+    }
+
+    .navbar-nav-1 ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       list-style-type: none;
+       padding-right: 5%;
+       font-size: 20px;
+      
+    }
+    .navbar-nav-1 ul {
+      gap: 10px;
+      margin-right: 25px;
+    }
+
+ }
+ /* hero section */
+ .hero-section {
+    color:white;
+    text-align: center;
+    padding: 200px 0;
+    background: #04282e;
+    background: linear-gradient(#0c1a1f, #202e35, #05314b);
+    position: relative;
+    overflow: hidden;
+
+
 }
-.navbar-nav-1{
-   display: flex;
-   align-items:right;
-   padding-right: 1%;
-   padding-left: 10%;
-    
-    
-}
+.container-card{
    
 }
+
+.hero-section ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://learntoearnlabs.com/wp-content/uploads/2025/10/How-to-Become-a-Job-Ready-MERN-Stack-Developer-in-6-Months-%E2%80%93-Career-Roadmap-1024x536.webp")no-repeat center/cover;
+    /* background: url(" ")no-repeat center/cover; */
+    opacity: 0.1;
+    z-index: 0;
+     
+    
+}
+.main-tittle{
+   color: brown;
+   text-shadow: 2px 2px 8px black;
+   font-size: 150%;
+}
+.hero-section h1,p{
+color:white;
+   text-shadow: 2px 2px 8px black;
+}
+.hero-section h1{
+ font-size: 300%;
+}
+.btn{
+   border: 1px ;
+   border-radius: 20px;
+   
+}
+.hero-section button:hover{
+    box-shadow: 0 10px 10px white;
+}
+
+
+
+  
+
+ /*  course main */
+ .main {
+    z-index: 10px;
+ }
+
+ .section-1 {
+    padding-top: 4px; 
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    list-style: none;
+
+ }
+
+ .section-1 ul {
+    list-style: none;
+    gap: 3%;
+    padding-left: 0;
+ }
+
+ .section-1 li {
+    border: 1px solid black;
+    border-radius: 6px;
+    background: rgb(58, 54, 54);
+    padding: 4px;
+    margin: 2px;
+    align-items: start;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+
+ .section-1 li:hover {
+    color: #111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ }
+
+ .section-1 h3 span {
+    gap: 2px;
+    color: rgb(37, 156, 37);
+
+ }
+
+ .section-1 h3 {
+    align-items: center;
+ }
+
+ .section-1 h3 s {
+    font-size: 15px;
+ }
+
+ .section-1 h6 {
+    color: green;
+ }
+
+ .button-1 {
+
+    padding: 2%;
+    width: 25%;
+    background: rgb(5, 148, 141);
+    color: white;
+
+ }
+
+ .button-2 {
+    padding: 2%;
+    width: 25%;
+    background: rgb(95, 89, 89);
+    color: white;
+
+ }
+
+ .btn-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 4%;
+
+
+ }
+
+ .btn-1 :hover {
+    border: 1px solid black;
+    box-shadow: 0 4px 10px gray;
+
+ }
+
+ .section-2 {
+
+    padding-left: 19%;
+ }
+
+ .card {
+    background: #111;
+    border: 1px solid white;
+ }
+
+
+ .card-discript {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ .card-discript div button {
+    background: rgb(58, 55, 55);
+    border: 2px solid black;
+    width: 100%;
+    gap: 10%;
+    color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-top: 1px;
+ }
+
+ @media (max-width:600px) {
+    .section-2 {
+       padding-left: 0;
+    }
+
+    .card {
+       background: #111;
+       border: 1px solid white;
+       width: 9rem;
+
+
+    }
+
+
+    .card-discript {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+    }
+
+    .card-discript div button {
+       background: rgb(58, 55, 55);
+       border: 2px solid black;
+       width: 50%;
+       gap: 10%;
+       color: white;
+       margin-bottom: 10px;
+       padding: 10px;
+       margin-top: 1px;
+    }
+ }
